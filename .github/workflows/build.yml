@@ -22,9 +22,9 @@ jobs:
           java-version: 11
       - name: Build and analyze
         env:
-          GITHUB_TOKEN: 709e47f8-6c69-486d-ab56-69d768b39f87
+          GITHUB_TOKEN: bf77521b-2607-4c23-ac56-a06ec8786bb9
           SONAR_TOKEN: 811c9a490983734401ba4e491eaefc8bfa7281de
         run: >-
           mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
-          -Dsonar.projectKey=iamneo-production_709e47f8-6c69-486d-ab56-69d768b39f87
+          -Dsonar.projectKey=iamneo-production_bf77521b-2607-4c23-ac56-a06ec8786bb9
           -Dsonar.login=811c9a490983734401ba4e491eaefc8bfa7281de
